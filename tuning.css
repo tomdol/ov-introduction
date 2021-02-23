@@ -1,6 +1,6 @@
 .reveal {
     font-family: "Titillium Web" !important; font-weight: 300 !important;
-    color: #CCCCCC !important;
+    color: #EEE !important;
     background: rgb(0,60,113);
     background: radial-gradient(circle, #00a0df 30%, #003c71 100%);
 }

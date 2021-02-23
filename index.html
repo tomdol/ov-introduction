@@ -39,6 +39,18 @@
                 <h1 class="ts10">Grafy</h1>
                 <h3 class="accent ts5">w deep learningu</h3>
             </section>
+            <section>
+                <h2>Funkcja jako graf</h2>
+                <div class="accent medium ts10">$$f(x) = ax + b$$</div>
+                <br>
+                <img src="img/ax_plus_b.png" class="fragment fade-in">
+            </section>
+            <section>
+                <h2>Netron</h2>
+                <img src="img/netron_github.png" style="width: 70%;">
+                <br>
+                <a href="https://github.com/lutzroeder/netron" class="fira"><i class="fab fa-github-square"></i> lutzroeder/netron</a>
+            </section>
         </section>
         <section>
             <section class="loose">
@@ -54,17 +66,19 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/math/math.js"></script>
 <script>
     Reveal.initialize({
         controls: false,
         slideNumber: 'c/t',
         transition: 'slide',
-        dependencies: [
-            { src: 'plugin/markdown/marked.js' },
-            { src: 'plugin/markdown/markdown.js' },
-            { src: 'reveal.js/math.js', async: true }
-            // { src: 'plugin/highlight/highlight.js', async: false, callback: function() { hljs.initHighlightingOnLoad(); } },
-        ]
+        math: {
+            mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+            config: 'TeX-AMS_HTML-full',
+            // pass other options into `MathJax.Hub.Config()`
+            TeX: { Macros: { RR: "{\\bf R}" } }
+        },
+        plugins: [ RevealMath ]
     });
 </script>
 </body>
