@@ -99,6 +99,28 @@
                 <br><br>
                 <a class="fragment" href="https://github.com/openvinotoolkit/openvino/blob/master/ngraph/core/reference/include/ngraph/runtime/reference/clamp.hpp">clamp.cpp</a>
             </section>
+            <section>
+                <h2>Optymalizacje grafu</h2>
+                <ul class="loose">
+                    <li class="fragment">Niezależne od sprzętu</li>
+                    <li class="fragment">Analogiczne do optymalizacji w kompilatorach</li>
+                    <li class="fragment">Wyszukują "patternów" do podmiany w grafie</li>
+                    <li class="fragment">Zamieniają na efektywniejsze rozwiązanie</li>
+                </ul>
+            </section>
+            <section>
+                <h2>nGraph</h2>
+                <img src="img/ngraph.png" style="width: 50%">
+                <h3>Kompilator grafów obliczeniowych</h3>
+            </section>
+            <section>
+                <h3>Implicit broadcast</h3>
+                <img src="img/implicit_bcast.png">
+            </section>
+            <section>
+                <h3>Constant folding</h3>
+                <img src="img/constant_folding.png">
+            </section>
         </section>
         <section data-transition="zoom-in">
             <section>
