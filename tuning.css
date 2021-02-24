@@ -70,3 +70,7 @@ div.MathJax_Display { margin: 0 !important; }
     left: 1em;
     font-size: 0.5em;
 }
+
+a {
+    color: #e7dd52 !important;
+}
