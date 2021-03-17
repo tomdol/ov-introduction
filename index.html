@@ -186,7 +186,7 @@
                 <h2>Netron</h2>
                 <img src="img/netron_github.png" style="width: 70%;">
                 <br>
-                <a href="https://github.com/lutzroeder/netron" class="fira"><i class="fab fa-github-square"></i> lutzroeder/netron</a>
+                <a href="https://github.com/lutzroeder/netron" class="fira"><i class="fab fa-github-square white"></i> lutzroeder/netron</a>
             </section>
             <section>
                 <h2>Grafy w DL</h2>
@@ -219,8 +219,9 @@
                 <ul class="loose">
                     <li class="fragment">Niezależne od sprzętu</li>
                     <li class="fragment">Analogiczne do optymalizacji w kompilatorach</li>
-                    <li class="fragment">Wyszukują "patternów" do podmiany w grafie</li>
+                    <li class="fragment">Wyszukują wzorców (patterns) do podmiany w grafie</li>
                     <li class="fragment">Zamieniają na efektywniejsze rozwiązanie</li>
+                    <li class="fragment">Wielokrotnie "przechodzą" przez graf</li>
                 </ul>
             </section>
             <section>
@@ -235,6 +236,10 @@
             <section>
                 <h3>Constant folding</h3>
                 <img src="img/constant_folding.png">
+            </section>
+            <section>
+                <h3>NOP elimination</h3>
+                <img src="img/nop_elimination.png">
             </section>
         </section>
         <section data-transition="zoom-in">
@@ -298,6 +303,23 @@
 			<section>
                 <h2 class="ts10">OpenVINO na rynku</h2>
                 <img src="img/OV_klienci.PNG" style="width: 100%">
+            <section>
+                <h2>Inference Engine</h2>
+                <ul class="loose">
+                    <li class="fragment">"runtime API"</li>
+                    <li class="fragment">Warstwa abstrakcji nad pluginami</li>
+                    <li class="fragment">Niezależne od frameworka, w którym zbudowano model</li>
+                    <li class="fragment">Pracuje na zestawie <span class="accent">.xml</span> + <span class="accent">.bin</span></li>
+                    <li class="fragment">...ale nie tylko - format ONNX</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Architektura Inference Engine</h3>
+                <img src="img/ie-arch.png">
+            </section>
+            <section>
+                <h3>API Inference Engine</h3>
+                <img src="img/ie-api.png">
             </section>
         </section>
         <section data-transition="zoom-in">
