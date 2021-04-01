@@ -265,20 +265,12 @@
                 <img src="img/OV_steps.PNG" style="width: 100%">
             </section>
 			<section>
-                <h2 class="ts10">Praca z OpenVINO</h2>
-                <img src="img/OV_step1.PNG" style="width: 100%">
-            </section>
-			<section>
                 <h2 class="ts10">Wspierane biblioteki</h2>
                 <img src="img/OV_formats.PNG" style="width: 100%">
             </section>
 			<section>
                 <h2 class="ts10">Model Zoo</h2>
                 <img src="img/OV_model_zoo.PNG" style="width: 100%">
-            </section>
-			<section>
-                <h2 class="ts10">Praca z OpenVINO</h2>
-                <img src="img/OV_step2.PNG" style="width: 100%">
             </section>
 			<section>
                 <h2 class="ts10">Model Optimizer</h2>
@@ -293,16 +285,9 @@
                 <img src="img/OV_workbench.PNG" style="width: 70%">
             </section>
 			<section>
-                <h2 class="ts10">Praca z OpenVINO</h2>
-                <img src="img/OV_step3.PNG" style="width: 100%">
-            </section>
-			<section>
-                <h2 class="ts10">Inferencja</h2>
-                <img src="img/OV_deploy.PNG" style="width: 100%">
-            </section>
-			<section>
                 <h2 class="ts10">OpenVINO na rynku</h2>
                 <img src="img/OV_klienci.PNG" style="width: 100%">
+            </section>
             <section>
                 <h2>Inference Engine</h2>
                 <ul class="loose">
@@ -325,6 +310,24 @@
         <section data-transition="zoom-in">
             <section>
                 <h1 class="ts10">DEMO</h1>
+            </section>
+			<section>
+                <h2>Przygotowanie w 4 krokach</h2>
+                <ul class="loose">
+                    <li class="fragment">Instalacja OpenVINO</li>
+                    <li class="fragment">Wybór i pobranie modelu</li>
+                    <li class="fragment">Konwersja modelu do formatu IR (opcjonalne)</li>
+                    <li class="fragment">Klasyfikacja</li>
+                </ul>
+            </section>
+			<section>
+                <h2>Klasyfikacja</h2>
+                <ul class="loose">
+                    <li class="fragment">Dostosowanie paramterów wejściowego pliku do modelu</li>
+                    <li class="fragment">Wczytanie modelu przez <span class="accent"> ie.read_network() </span></li>
+                    <li class="fragment">Załadowanie modelu na docelowe urządzenie przez <span class="accent"> ie.load_network() </span></li>
+                    <li class="fragment">Inferencja funckją <span class="accent"> infer() </span></li>
+                </ul>
             </section>
         </section>
     </div>
