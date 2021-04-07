@@ -69,6 +69,7 @@ div.MathJax_Display { margin: 0 !important; }
     bottom: 1em;
     left: 1em;
     font-size: 0.5em;
+    color: #999;
 }
 
 a {

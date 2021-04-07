@@ -1,3 +1,9 @@
+<!--
+    Copyright (C) 2021 Intel Corporation
+    SPDX-License-Identifier: Creative Commons BY 4.0
+    https://creativecommons.org/licenses/by/4.0/
+-->
+
 <!doctype html>
 <html>
 <head>
@@ -21,12 +27,13 @@
         <section>
             <br><br>
             <img src="img/int-openvino-wht.svg" style="width: 60%"><br>
+            <br>
             <h4>deep learning w praktyce</h4>
             <br><br>
             <div class="accent small row">
                 <span class="side-padded"><i class="fas fa-user white"></i> Szymon Durawa</span>
                 <span class="side-padded"><i class="fas fa-user white"></i> Tomasz Dołbniak</span>
-                <span class="side-padded"><i class="fas fa-map-marker-alt white"></i> Gdańsk 2021</span>
+                <span class="side-padded"><i class="fas fa-map-marker-alt white"></i> Gdańsk/Szczecin 2021</span>
             </div>
         </section>
         <section data-transition="zoom-in">
@@ -154,11 +161,11 @@
                 <h3 class="accent ts5">w deep learningu</h3>
             </section>
             <section>
-                <h2>Sieci neuronowe</h2>
+                <h2 class="ts10">Sieci neuronowe</h2>
                 <img src="img/model_neurons.png" style="width: 50%">
             </section>
             <section>
-                <h3>Model jako funkcja</h3>
+                <h3 class="ts10">Model jako funkcja</h3>
                 <div class="row">
                     <img src="img/Hapsik.jpg" style="width: 15rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <span class="fira">-></span>&nbsp;&nbsp;&nbsp;
@@ -176,19 +183,19 @@
                 </div>
             </section>
             <section>
-                <h2>Funkcja jako graf</h2>
+                <h2 class="ts10">Funkcja jako graf</h2>
                 <div class="accent medium ts10">$$f(x) = ax + b$$</div>
                 <br>
                 <img src="img/ax_plus_b.png" class="fragment fade-in">
             </section>
             <section>
-                <h2>Netron</h2>
+                <h2 class="ts10">Netron</h2>
                 <img src="img/netron_github.png" style="width: 70%;">
                 <br>
                 <a href="https://github.com/lutzroeder/netron" class="fira"><i class="fab fa-github-square white"></i> lutzroeder/netron</a>
             </section>
             <section>
-                <h2>Grafy w DL</h2>
+                <h2 class="ts10">Grafy w DL</h2>
                 <div class="row">
                     <img src="img/ax_plus_b.png" style="margin-right: 1em;">
                     <ul class="loose">
@@ -202,7 +209,7 @@
                 </div>
             </section>
             <section>
-                <h3><span class="accent">Inferencja</span> (obliczenie) grafu</h3>
+                <h3 class="ts10"><span class="accent">Inferencja</span> (obliczenie) grafu</h3>
                 <img src="img/topological_sort.png">
                 <br>
                 <ul class="loose">
@@ -214,7 +221,18 @@
                 <a class="fragment" href="https://github.com/openvinotoolkit/openvino/blob/master/ngraph/core/reference/include/ngraph/runtime/reference/clamp.hpp">clamp.cpp</a>
             </section>
             <section>
-                <h2>Optymalizacje grafu</h2>
+                <h2 class="ts10">Optymalizacje sprzętowe</h2>
+                <ul class="loose">
+                    <li class="fragment">Kernele</li>
+                    <li class="fragment">Ściśle powiązane z konkretnym HW</li>
+                    <li class="fragment">Wykorzystują dostępne instrukcje</li>
+                    <li class="fragment">Wykorzystują wektoryzację</li>
+                    <li class="fragment">Wiele kerneli dla jednej operacji</li>
+                </ul>
+                <a href="https://github.com/oneapi-src/oneDNN" class="fragment">github.com/oneapi-src/oneDNN</a>
+            </section>
+            <section>
+                <h2 class="ts10">Optymalizacje grafu</h2>
                 <ul class="loose">
                     <li class="fragment">Niezależne od sprzętu</li>
                     <li class="fragment">Analogiczne do optymalizacji w kompilatorach</li>
@@ -224,20 +242,20 @@
                 </ul>
             </section>
             <section>
-                <h2>nGraph</h2>
+                <h2 class="ts10">nGraph</h2>
                 <img src="img/ngraph.png" style="width: 50%">
                 <h3>Kompilator grafów obliczeniowych</h3>
             </section>
             <section>
-                <h3>Implicit broadcast</h3>
+                <h3 class="ts10">Implicit broadcast</h3>
                 <img src="img/implicit_bcast.png">
             </section>
             <section>
-                <h3>Constant folding</h3>
+                <h3 class="ts10">Constant folding</h3>
                 <img src="img/constant_folding.png">
             </section>
             <section>
-                <h3>NOP elimination</h3>
+                <h3 class="ts10">NOP elimination</h3>
                 <img src="img/nop_elimination.png">
             </section>
         </section>
@@ -288,7 +306,7 @@
                 <img src="img/OV_klienci.PNG" style="width: 100%">
             </section>
             <section>
-                <h2>Inference Engine</h2>
+                <h2 class="ts10">Inference Engine</h2>
                 <ul class="loose">
                     <li class="fragment">"runtime API"</li>
                     <li class="fragment">Warstwa abstrakcji nad pluginami</li>
@@ -298,15 +316,15 @@
                 </ul>
             </section>
             <section>
-                <h3>Architektura Inference Engine</h3>
+                <h3 class="ts10">Architektura Inference Engine</h3>
                 <img src="img/ie-arch.png">
             </section>
             <section>
-                <h3>API Inference Engine</h3>
+                <h3 class="ts10">API Inference Engine</h3>
                 <img src="img/ie-api.png">
             </section>
             <section>
-                <h3>Dystrybucje OV</h3>
+                <h3 class="ts10">Dystrybucje OV</h3>
                 <ul>
                     <li>
                         PYPI: <br>
@@ -331,10 +349,11 @@
                 </ul>
             </section>
             <section>
-                <h3>Pozostałe materiały</h3>
+                <h3 class="ts10">Pozostałe materiały</h3>
                 <ul class="small">
                     <li><a href="https://docs.openvinotoolkit.org/latest/index.html">docs.openvinotoolkit.org/latest/index.html</a></li>
                     <li class="fragment"><a href="https://docs.openvinotoolkit.org/latest/omz_models_public_index.html">docs.openvinotoolkit.org/latest/omz_models_public_index.html</a></li>
+                    <li class="fragment"><a href="https://docs.openvinotoolkit.org/latest/omz_demos.html">docs.openvinotoolkit.org/latest/omz_demos.html</a></li>
                     <li class="fragment"><a href="https://github.com/onnx/models">github.com/onnx/models</a></li>
                     <li class="fragment"><a href="https://github.com/openvinotoolkit/openvino">github.com/openvinotoolkit/openvino</a></li>
                     <li class="fragment"><a href="https://github.com/openvinotoolkit/model_server">github.com/openvinotoolkit/model_server</a></li>
@@ -367,7 +386,7 @@
             </section>
         </section>
     </div>
-    <div class="footer">Intel AI / copyright / ...</div>
+    <div class="footer">Copyright © Intel Corporation</div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.js"></script>
